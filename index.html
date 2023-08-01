@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- Title screen -->
+      <div id="title-screen">
+        <h1>Astrogenesis</h1>
+        <button id="start-button">Start Game</button>
+      </div>
+
+      <!-- In-game UI -->
+      <div id="game-ui">
+        <div id="tool-select">
+          <button id="tool-raise">Raise Terrain</button>
+          <button id="tool-lower">Lower Terrain</button>
+          <button id="tool-plant">Plant Tree</button>
+        </div>
+        <div id="inventory">
+          <span>Seeds: <span id="seeds-count">10</span></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Include Three.js, then the game modules -->
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
