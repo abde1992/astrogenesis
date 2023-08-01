@@ -63,6 +63,7 @@ export function setupGameplay(scene, terrain, camera, resources) {
 
                 // Reduce the number of seeds in the inventory
                 inventory.seeds--;
+                updateInventory();
             }
         }
     }
@@ -77,6 +78,12 @@ export function setupGameplay(scene, terrain, camera, resources) {
     // Function to add seeds to the inventory
     function addSeeds(number) {
         inventory.seeds += number;
+        updateInventory();
+    }
+
+    // Function to update the inventory display
+    function updateInventory() {
+        document.getElementById('seeds-count').textContent = inventory.seeds;
     }
 
     return { changeTool, addSeeds };
