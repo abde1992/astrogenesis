@@ -1,6 +1,4 @@
 # astrogenesis
-AstroGenesis: Chronicles of the Starborn
-
 A demo using Generative AI to procedurally generate environments and render them using Three.js.
 
 In AstroGenesis, the player is a Starborn, an entity capable of creating and nurturing life on barren planets. The goal is to terraform procedurally generated planets and create a sustainable ecosystem.
